@@ -24,6 +24,25 @@ plot(1:9)
 # Results {#sec-results}
 
 # Discussion {#sec-discussion}
+```{r}
+
+```
+
+Here is a discussion with the code hidden
+```{r}
+#| echo: false
+library(ggplot2)
+data(mtcars)
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  labs(title = "Fuel Efficiency by Car Weight",
+       x = "Weight (1000 lbs)",
+       y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+
+
 
 # References
 
