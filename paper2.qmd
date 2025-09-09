@@ -1,32 +1,30 @@
 ---
-title: "My first quarto project"
-bibliography: references.bib
+title: "My paper"
+author: "Karen Curiel Ruiz Velasco"
+format: html
 ---
 
-## Quarto
+See the mind map in @fig-figure1 for a simple R plot
+
+# Introduction {#sec-intro}
+
+![Figure #1](images/Screenshot%202025-09-09%20112024-02.png){#fig-figure1}
+
+This is figure 1 that displays my mindmap.
 
 ```{r}
-#add 3+5 and print result
-3 + 5
+#| label: fig-rplot
+#| fig-cap: "A simple R plot"
+plot(1:9)
+
 ```
 
-# Big Title
+# Methods {#sec-methods}
 
-## Smaller Title
+# Results {#sec-results}
 
-### Even Smaller Title
+# Discussion {#sec-discussion}
 
-*italics*
+# References
 
-*bold*
-
-## [@paiva2018] Results {#sec-karenlabel}
-
-```{r}
-#add 3+5 and print result
-3 + 5
-```
-
-##### ####as shown in @sec-karenlabel then
-
-# 
+###To go back to @sec-discussion
